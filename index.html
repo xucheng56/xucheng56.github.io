@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>个人网站</title>
+    <title>我爱你</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <style>
@@ -96,15 +96,19 @@
 </head>
 
 <body>
+<div class="cs">
+    <img src="">
+</div>
+<canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
-     我 已 经 爱 上 你 了
+    我 已 经 爱 上 你
     <br/>
     <span id="span_dt_dt"></span>
 </p>
 <script language="javascript">
     function show_date_time() {
         window.setTimeout("show_date_time()", 1000);
-        BirthDay = new Date("8/1/22 11:00:00");
+        BirthDay = new Date("8/23/2018 18:00:00");//这个日期是可以修改的
         today = new Date();
         timeold = (today.getTime() - BirthDay.getTime());
         sectimeold = timeold / 1000
@@ -117,7 +121,7 @@
         e_minsold = (e_hrsold - hrsold) * 60;
         minsold = Math.floor((e_hrsold - hrsold) * 60);
         seconds = Math.floor((e_minsold - minsold) * 60);
-        span_dt_dt.innerHTML = '无数' + "天" + '25' + "小时" + '61' + "分" + '61' + "秒";
+        span_dt_dt.innerHTML = 99999 + "天" + 25 + "小时" + 61 + "分" + 61 + "秒了";
     }
 
     show_date_time();
@@ -128,7 +132,7 @@
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
 			//想说的话
-            S.UI.simulate("我|想|对|你|说|一|句|话|#countdown 3|我|爱|你|♥|#time");
+            S.UI.simulate("我|想|跟|你|说|一|句|话|#countdown 3|我|爱|你|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -661,7 +665,7 @@
     }());
     S.init();
 </script>
-@Author：XuCheng
+声明:网页源码来自GitHub，本网站未做任何商业用途
 <audio> autoplay="autoplay" loop="loop">
     <source src="http://www.kuwo.cn/play_detail/7149583?from=baidu">
 <div class="cs">
