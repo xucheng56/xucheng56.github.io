@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>今天吃啥</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <h3 class="title">摇到啥就吃啥</h3>
+    <div class="slt">
+        <button id="lchBtn">早餐</button>
+        <button id="snkBtn">正餐</button>
+    </div>
+    <div class="food">今天吃啥</div>
+    <div class="btn">
+        <button id="startBtn">开始</button>
+        <button id="stopBtn">停止</button>
+    </div>
+    <div class="add">
+        <span>可添加新食物：</span>
+        <input type="text" class="addfood" id="addipt">
+        <button class="addbtn" id="addBtn">添加</button>
+    </div>
+    <div class="del">
+        <span>可删除已有食物：</span>
+        <div class="df">
+            <input type="text" class="delfood" id="delipt">
+            <button class="delbtn" id="delBtn">删除</button>
+            <span id="delSlt"></span>
+            <ul class="food-list" id="fList">
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
