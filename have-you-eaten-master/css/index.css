@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.food {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: pink;
+    line-height: 100px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.btn,
+.slt {
+    width: 200px;
+    height: 50px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+
+.slt>button,
+.btn>button {
+    height: 30px;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.del,
+.add {
+    width: 260px;
+    margin: 10px auto;
+}
+
+.delfood,
+.addfood {
+    box-sizing: border-box;
+    height: 28px;
+    outline: none;
+    padding-left: 5px;
+    /* padding-right: 5px; */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.df {
+    position: relative;
+}
+
+.df>span {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 65px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: rotate(45deg);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.delbtn,
+.addbtn {
+    padding: 0 5px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.food-list {
+    display: none;
+    width: 203px;
+    height: 140px;
+    overflow: auto;
+}
+
+.food-list li {
+    display: block;
+    height: 28px;
+    border: 1px solid #333;
+    border-top: 0;
+    padding-left: 5px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.food-list li:hover {
+    background-color: #ccc;
+}
